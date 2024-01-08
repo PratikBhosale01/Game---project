@@ -2,8 +2,30 @@
  margin: 0;
  padding: 0;
  background-color: rgba(73, 66, 66, 0.836);
+ text-align: center;
 }
 h1{
-    background-color: black;
+    background-color: rgb(47, 36, 47);
     color: aliceblue;
+    height: 70px;
+   line-height:70px ;
+}
+.choice{
+   width: 260px;
+    height:390px;
+}
+img{
+    width: 250px;
+    height:380px;
+    object-fit: cover;
+}
+.choice:hover{
+    opacity: 0.5;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 3rem;
+    margin-top: 5rem;
 }
