@@ -1,0 +1,9 @@
+*{
+ margin: 0;
+ padding: 0;
+ background-color: rgba(73, 66, 66, 0.836);
+}
+h1{
+    background-color: black;
+    color: aliceblue;
+}
