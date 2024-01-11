@@ -20,12 +20,13 @@ const showWinner = (userwin) => {
         console.log("You won!");
         msg.innerText = "You won!";
         userScore++;
+        console.log("userScore is ",userScore);
 
     }else{
         console.log("You lost!");
         msg.innerText = "You lost!";
         compscore++;
-        console.log(""
+        console.log("compscore is" ,compscore);
     }
 };
 
