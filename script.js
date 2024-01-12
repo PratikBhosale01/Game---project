@@ -3,6 +3,8 @@ let compscore =0;
 
 const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector(".msg");
+const compSc = document.querySelector("#comp-score");
+const userSc = document.querySelector("#user-score"); 
 
 const genCompChoice = () => {
     const opt = ["rk","pr","sr"];
@@ -13,6 +15,11 @@ const genCompChoice = () => {
 const drawGame = () => {
   console.log("drawGame");
   msg.innerText="Game Draw !";
+}
+
+const showScore = () => {
+    compSc.innerText=compscore;
+    userSc.innerText=userScore;
 }
 
 const showWinner = (userwin) => {
@@ -50,6 +57,7 @@ const playGame =( userChoiceId ) => {
         userChoiceId = compChoice === "rk" ? false : true ; 
     }
     showWinner(userwin );
+    showScore();
  }
   
 };
